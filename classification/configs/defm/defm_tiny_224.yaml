@@ -1,0 +1,17 @@
+MODEL:
+  TYPE: vssm
+  NAME: defm_tiny_e300
+  DROP_PATH_RATE: 0.2
+  VSSM:
+    EMBED_DIM: 48
+    DEPTHS: [ 2, 2, 5, 2]
+    SSM_D_STATE: 16
+    SSM_DT_RANK: "auto"
+    SSM_RATIO: 1.0
+    MLP_RATIO: 4.0
+    DOWNSAMPLE: "v3"
+    PATCHEMBED: "v2"
+    CONVFFN: False
+    ADD_SE: False
+    FFN_DROPOUT: 0.0
+
